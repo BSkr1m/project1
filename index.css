@@ -1,5 +1,17 @@
 .red {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   background-color: red;
+  transition: opacity 500ms ease-in-out;
+  padding: 10px;
+  margin-top: 15px;
+  margin-bottom: 100px;
+  opacity: 0;
+  font-family: Roboto;
+}
+.red:hover {
+  opacity: 1;
 }
 
 body {
