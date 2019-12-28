@@ -6,37 +6,85 @@
   transition: opacity 500ms ease-in-out;
   padding: 10px;
   margin-bottom: 100px;
-  opacity: 1;
+  opacity: 0;
   font-family: Roboto;
 }
+.red:hover {
+  opacity: 1;
+  transition: 500ms;
+}
+
 .hui {
   background-color: grey;
 }
-.hui2{
+.hui2 {
   color: white;
 }
 
 body {
   margin: 100;
-  margin-right: 100
-font-size: 20;
-font-family: Roboto;
+  margin-right: 100;
+  font-size: 20;
+  font-family: Roboto;
+  background-image: url(/886eb44477e83d492e60459d624eedef.jpg);
 }
 
-.a1{
+.a1 {
   font-size: 18;
   padding: 15;
   font-family: Roboto;
 }
 
-.flex_image{
-width: 250px;
-height: 250px;
+.flex_image {
+  width: 250px;
+  height: 250px;
+}
+.image-container {
+  display: flex;
+  justify-content: center;
+}
+.test-hover:hover > .dropdown-content {
+  display: block;
 }
 
-.button-container1{
+.button-container1 {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+}
 
+.dropdown-caption {
+  font-size: 20px;
+}
+.dropdown-content {
+  display: none;
+}
+
+.bud {
+  width: 30px;
+  height: 30px;
+}
+#blink {
+  -webkit-animation: blink 2s linear infinite;
+  animation: blink 2s linear infinite;
+}
+@-webkit-keyframes blink {
+  50% {
+    color: rgb(0, 255, 0);
+  }
+  51% {
+    color: rgba(34, 34, 34, 0);
+  }
+  100% {
+    color: rgba(34, 34, 34, 0);
+  }
+}
+@keyframes blink {
+  50% {
+    color: rgb(255, 0, 0);
+  }
+  51% {
+    color: rgba(34, 34, 34, 0);
+  }
+  100% {
+    color: rgba(34, 34, 34, 0);
+  }
 }
