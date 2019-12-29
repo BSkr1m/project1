@@ -13,7 +13,10 @@
   opacity: 1;
   transition: 500ms;
 }
-
+.h2 {
+  background-color: grey;
+  color: white;
+}
 .hui {
   background-color: grey;
 }
@@ -26,7 +29,7 @@ body {
   margin-right: 100;
   font-size: 20;
   font-family: Roboto;
-  background-image: url(/886eb44477e83d492e60459d624eedef.jpg);
+  background-image: url(/ftp-background-6.png);
 }
 
 .a1 {
@@ -49,8 +52,22 @@ body {
 
 .button-container1 {
   display: flex;
+  color: rgb(9, 132, 58);
+  font-weight: 700;
+  text-decoration: none;
+  user-select: none;
+  padding: 0.5em 2em;
+  outline: none;
+  border: 2px solid;
+  border-radius: 1px;
+  transition: 0.2s;
 }
-
+a.button-container1:hover {
+  background: rgba(255, 255, 255, 2);
+}
+a.button-container1:active {
+  background: white;
+}
 .dropdown-caption {
   font-size: 20px;
 }
@@ -61,30 +78,9 @@ body {
 .bud {
   width: 30px;
   height: 30px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 #blink {
   -webkit-animation: blink 2s linear infinite;
   animation: blink 2s linear infinite;
-}
-@-webkit-keyframes blink {
-  50% {
-    color: rgb(0, 255, 0);
-  }
-  51% {
-    color: rgba(34, 34, 34, 0);
-  }
-  100% {
-    color: rgba(34, 34, 34, 0);
-  }
-}
-@keyframes blink {
-  50% {
-    color: rgb(255, 0, 0);
-  }
-  51% {
-    color: rgba(34, 34, 34, 0);
-  }
-  100% {
-    color: rgba(34, 34, 34, 0);
-  }
 }
